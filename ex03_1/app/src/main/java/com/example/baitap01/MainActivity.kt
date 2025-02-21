@@ -46,6 +46,9 @@ fun RandomBackgroundApp() {
         R.drawable.bg03,
         R.drawable.bg04,
         R.drawable.bg05,
+        R.drawable.bg06,
+        R.drawable.bg07,
+        R.drawable.bg08,
     )
     var randomBg by remember { mutableStateOf(backgroundList.random()) }
     var isSwitched by remember { mutableStateOf(false) }
@@ -68,6 +71,7 @@ fun RandomBackgroundApp() {
                 Text(text = "Change Background", color = Color.White)
                 Spacer(modifier = Modifier.width(8.dp))
                 Switch(
+                    modifier = Modifier.width(12.dp),
                     checked = isSwitched,
                     onCheckedChange = { newValue ->
                         isSwitched = newValue
@@ -101,8 +105,8 @@ fun StudentInfo(modifier: Modifier = Modifier) {
         Text(text = "Nguyễn Văn Hoài", fontSize = 18.sp, color = Color.White)
         Text(text = "22110327", fontSize = 14.sp, color = Color.White)
 
-        Spacer(modifier = Modifier.height(20.dp))
-        Ex01_4()
+//        Spacer(modifier = Modifier.height(20.dp))
+//        Ex01_4()
 
         Spacer(modifier = Modifier.height(20.dp))
         Ex01_5()

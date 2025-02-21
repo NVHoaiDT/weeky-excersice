@@ -1,4 +1,4 @@
-package com.example.ex3_2;
+package com.example.ex03_2;
 
 import org.junit.Test;
 
