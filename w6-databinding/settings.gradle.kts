@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SQLite"
+rootProject.name = "DataBinding"
 include(":app")
- 
