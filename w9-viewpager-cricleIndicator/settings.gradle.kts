@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "viewpager-cricleIndicator"
+rootProject.name = "circle_indicator"
 include(":app")
+ 

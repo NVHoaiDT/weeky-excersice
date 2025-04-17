@@ -32,6 +32,7 @@ import kotlin.random.Random
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
+import kotlin.math.log
 
 
 class MainActivity : ComponentActivity() {
@@ -108,12 +109,19 @@ fun Ex01_4() {
         numberList = generateRandomNumbers(10)
         oddNumbers = numberList.filter { it % 2 != 0 } as ArrayList<Int>
         evenNumbers = numberList.filter { it % 2 == 0 } as ArrayList<Int>
-        Log.d("Generated Numbers", "Numbers: $numberList")
-        Log.d("Odd Numbers", "Odd: $oddNumbers")
-        Log.d("Even Numbers", "Even: $evenNumbers")
+
+        Log.d("Numbers: ", "$numberList")
+        Log.d("Odd Numbers: ", "$oddNumbers")
+        Log.d("Even Numbers: ", "$evenNumbers")
     }) {
-        Text("Ex01_4")
+        Text("Numbers")
     }
+
+
+    Text(text ="Numbers: $numberList")
+    Text(text ="Odd Numbers: $oddNumbers")
+    Text(text ="Even Numbers: $evenNumbers")
+
 }
 
 
@@ -143,7 +151,7 @@ fun Ex01_5() {
         result = reversedString
         Toast.makeText(context, reversedString, Toast.LENGTH_SHORT).show()
     }) {
-        Text(text = "Ex01_5")
+        Text(text = "Reverse")
     }
     Spacer(modifier = Modifier.height(16.dp))
     Text(text = "Reversed and Uppercase: $result")

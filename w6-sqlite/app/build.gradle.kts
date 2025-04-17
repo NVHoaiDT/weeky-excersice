@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.baitap_sqlite"
+    namespace = "com.example.sqlite"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.baitap_sqlite"
+        applicationId = "com.example.sqlite"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

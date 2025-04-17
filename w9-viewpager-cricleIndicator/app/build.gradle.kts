@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.viewpager_cricleindicator"
-    compileSdk = 34
+    namespace = "com.example.circle_indicator"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.viewpager_cricleindicator"
+        applicationId = "com.example.circle_indicator"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -32,7 +32,6 @@ android {
 }
 
 dependencies {
-    implementation(libs.circleindicator)
 
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -41,4 +40,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
+    implementation("me.relex:circleindicator:2.1.6")
+//    implementation("com.github.smarteist:autoimageslider:1.4.0")
+
 }
